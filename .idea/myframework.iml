@@ -9,6 +9,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/MF/Init" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/MF/Controller" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/MF/Model" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
