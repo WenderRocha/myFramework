@@ -2,11 +2,11 @@
 
 require_once "../vendor/autoload.php";
 
-use App\Route;
+use App\Routes;
 
 try{
 
-    $route = new Route();
+    $route = new Routes();
 
 }catch (Exception $e){
     echo $e->getMessage();
