@@ -2,26 +2,20 @@
 
 namespace App;
 
-class Route{
+use MF\Init\Bootstrap;
 
-    public function initRoutes()
+class Route extends Bootstrap {
+
+    protected function initRoutes(): void
     {
-        $routes['home'] = [
-            'route' => '/',
-            'controller' => 'indexController',
-            'action' => 'index'
+        $routes = [
+
+            ['route' => '/', 'controller' => 'indexController', 'action' => 'index'],
+            ['route' => '/sobre-nos', 'controller' => 'indexController', 'action' => 'sobre'],
+            ['route' => '/contato', 'controller' => 'indexController', 'action' => 'contato'],
         ];
 
-        $routes['sobrenos'] = [
-            'route' => '/sobre-nos',
-            'controller' => 'indexController',
-            'action' => 'index'
-        ];
+        $this->setRoutes($routes);
 
-    }
-
-    public function getUrl()
-    {
-        return parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     }
 }

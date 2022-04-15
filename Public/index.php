@@ -4,5 +4,11 @@ require_once "../vendor/autoload.php";
 
 use App\Route;
 
-$route = new Route();
-var_dump($route->getUrl());
+try{
+
+    $route = new Route();
+
+}catch (Exception $e){
+    echo $e->getMessage();
+}
+
