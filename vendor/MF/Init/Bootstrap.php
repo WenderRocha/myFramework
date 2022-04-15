@@ -33,7 +33,7 @@ abstract class Bootstrap {
 
 
 
-    protected function run(string $url)
+    protected function run(string $url): void
     {
         $r_route = [];
 
