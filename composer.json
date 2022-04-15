@@ -1,0 +1,20 @@
+{
+    "name": "vendor-name/myframework",
+    "require":{
+        "php": ">= 8.0"
+     },
+
+     "authors": [
+         {
+             "name": "Wender Rocha",
+             "email": "wender_dev@hotmail.com"
+         }
+     ],
+
+     "autoload": {
+         "psr-4": {
+             "App\\": "App/",
+             "MF\\": "vendor/MF"
+         }
+     }
+}
